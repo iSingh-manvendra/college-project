@@ -1,0 +1,202 @@
+/* GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  background-color: #b66ee4;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+.brandLogo {
+  margin-top: 2%;
+  height: 130px;
+  left: 0%;
+
+}
+
+/* CAROUSEL */
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+#placeDetails .booking-btn{
+  margin-top: 18px;
+  margin-left: 50px;
+}
+
+/* loginForm hidden password */
+.password-box {
+  position: relative;
+  width: 300px;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.password-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+}
+/* chat bot */
+
+#chatbox {
+    height: 345px;
+    overflow-y: auto;
+}
+
+.chatbot-input{
+  border-radius: 10px;
+  padding: 3px;
+  width: 70%;
+  /* margin-top: 80px; */
+}
+.chatbot .btn{
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 35%;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    z-index: 1000;
+    display: none; /* 👈 hidden by default */
+}
+
+/* Chat Button */
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 40px;
+    z-index: 10;
+}
+
+
+/* BUTTON */
+.btn {
+  border-radius: 20px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* TOAST */
+.toast-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
+  color: rgb(244, 238, 238);
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+/* Footer */
+#footer-logo{
+  height: 60px;
+  width: 60px;
+}
+/* DARK MODE */
+.dark-mode {
+  background-color: #121212;
+  color: navy;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode #loginModal {
+  background: rgba(255, 255, 255, 0.1);
+  /* transparent */
+  backdrop-filter: blur(10px);
+  /* MAIN BLUR */
+  -webkit-backdrop-filter: blur(10px);
+  /* for Safari */
+}

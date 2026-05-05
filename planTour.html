@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Tour</title>
+    <link rel="stylesheet" href="planTour.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/web-app-manifest-192x192.png" />
+
+    <!-- Bootstrap CSS - Add if you're using it for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <!-- LEFT BOX (NOW CARD STYLE LIKE RIGHT) - Unchanged for this fix -->
+            <div class="leftbox card">
+                <h1>How we work?</h1>
+                <div class="step">
+                    <img src="img/png-mountain.png">
+                    <div>
+                        <p>Select your tour</p>
+                        <span>Tell us your requirements</span>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/png-chat.png">
+                    <div>
+                        <p>Get Free Quotes</p>
+                        <span>From verified partners</span>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/png-booking.png">
+                    <div>
+                        <p>Customize & Book</p>
+                        <span>Your perfect trip</span>
+                    </div>
+                </div>
+                <h3>We are growing company</h3>
+                <div class="feedback">
+                    <div>
+                        <img src="img/agent2a.png">
+                        <p>150+ Agents</p>
+                    </div>
+                    <div>
+                        <img src="img/traveler1.png">
+                        <p>Happy Travelers</p>
+                    </div>
+                    <div>
+                        <img src="img/png-place-location.png">
+                        <p>50+ Destinations</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <hr>
+                <div class="contact">
+                    <img src="img/call-png.png">
+                    <br><br>
+                    <div class="cont-detail">
+                        <p>Call Us for details</p>
+                        <h1>9748364989</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT BOX - **UPDATED WITH IDs** -->
+            <div class="rightbox card">
+                <h1>Plan Your Trip</h1>
+
+                <form id="plan-tour-form" class="form">  <!-- Added id="plan-tour-form" -->
+
+                    <label for="destination">To *</label>
+                    <input type="text" id="destination" required placeholder="Destination"> <!-- Added id="destination" -->
+
+                    <label for="location">From *</label>
+                    <input type="text" id="location" required placeholder="Your location"> <!-- Added id="location" -->
+
+                    <label>Departure Date</label>
+                    <div class="btn-group">
+                        <input type="radio" name="departure" id="dep-fixed" value="Fixed" checked> <!-- Added value="Fixed" -->
+                        <label for="dep-fixed">Fixed</label>
+
+                        <input type="radio" name="departure" id="dep-flexible" value="Flexible"> <!-- Added value="Flexible" -->
+                        <label for="dep-flexible">Flexible</label>
+                    </div>
+
+                    <label>Budget</label>
+                    <div class="btn-group">
+                        <input type="radio" name="budget" id="bud-fixed" value="Fixed" checked> <!-- Added value="Fixed" -->
+                        <label for="bud-fixed">Fixed</label>
+
+                        <input type="radio" name="budget" id="bud-flexible" value="Flexible"> <!-- Added value="Flexible" -->
+                        <label for="bud-flexible">Flexible</label>
+                    </div>
+
+                    <div class="people">
+                        <div>
+                            <label for="adults">Adults</label>
+                            <input type="number" id="adults" value="1" min="1"> <!-- Added id="adults" -->
+                        </div>
+                        <div>
+                            <label for="children">Children</label>
+                            <input type="number" id="children" value="0" min="0"> <!-- Added id="children" -->
+                        </div>
+                    </div>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required> <!-- Added id="email" -->
+
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" pattern="[0-9]{10}" required placeholder="10 digit number"> <!-- Added id="phone" -->
+
+                    <button type="submit" class="submit">Plan My Holidays</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- TOAST - Unchanged -->
+    <div id="toast"></div>
+
+    <!-- Bootstrap JS - Add if you're using it for functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your custom script, now also including Firebase initialization -->
+    <script type="module" src="firebase-plantour.js"></script> <!-- Ensure this name matches your JS file -->
+</body>
+
+</html>

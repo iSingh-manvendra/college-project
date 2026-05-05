@@ -1,0 +1,22 @@
+ body {
+   padding: 20px;
+   background-color: #f8ff;
+ }
+
+ .container {
+   max-width: 1200px;
+   margin-top: 20px;
+ }
+
+ .data-table {
+   margin-bottom: 40px;
+ }
+
+ .data-table h2 {
+   margin-bottom: 20px;
+ }
+
+ #admin-status {
+   margin-bottom: 20px;
+   font-weight: bold;
+ }
