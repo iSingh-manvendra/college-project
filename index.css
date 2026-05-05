@@ -157,6 +157,12 @@ form {
   height: 60px;
   width: 60px;
 }
+
+footer a:hover {
+    color: white !important;
+    transition: 0.3s;
+}
+
 /* DARK MODE */
 .dark-mode {
   background-color: #121212;
